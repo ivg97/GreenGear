@@ -66,3 +66,20 @@ class Category(models.Model):
         verbose_name_plural = 'Categories'
         ordering = ['title']
         db_table = 'blog_categories'
+
+
+class NewPostEmail(models.Model):
+    """Model for table new_post_emails"""
+    email = models.EmailField(
+        verbose_name='Email',
+    )
+    is_active = models.BooleanField(
+        default=True,
+        verbose_name='Active',
+    )
+
+    class Meta:
+        verbose_name = 'New Post Email'
+        verbose_name_plural = 'New Post Emails'
+        ordering = ['email']
+        db_table = 'new_post_emails'
