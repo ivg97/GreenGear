@@ -21,6 +21,12 @@ class Team(models.Model):
         blank=True,
         null=True
     )
+    photo = models.ImageField(
+        upload_to='images/team_photos/',
+        blank=True,
+        null=True,
+        verbose_name="Photo",
+    )
     is_active = models.BooleanField(
         default=True
     )
