@@ -5,6 +5,6 @@ from contact import views
 app_name = 'contact'
 
 urlpatterns = [
-    path('contact/', views.contact, name='contact'),
+    path('', views.contact, name='contact'),
 
 ]
