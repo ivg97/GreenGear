@@ -7,12 +7,15 @@ from contact.forms import CommunicationServiceForm
 
 
 def contact(request):
+    context = {
+        'title': 'Title',
+    }
     template_name = 'contact/contact.html'
     form = CommunicationServiceForm()
     if request.method == "POST":
         form = CommunicationServiceForm(request.POST)
 
-    return render(request, template_name)
+    return render(request, template_name, context)
 
 
 class CommunicationServiceView(FormView):
