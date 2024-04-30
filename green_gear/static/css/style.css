@@ -709,12 +709,14 @@ footer {
 
 .list_page_1_content_card {
 	margin-bottom: 88px;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	align-items: center;
 }
 
 .list_page_1_content_card_left {
-	width: 656px;
+	background-repeat: no-repeat;
+	width: 100%;
 	height: 500px;
 	border-radius: 20px;
 	background-image: url("/static/img/flat_pattern_bg.png");
