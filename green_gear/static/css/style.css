@@ -16,6 +16,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+	padding-top: 72px;
+}
+
 /*начало навбара*/
 nav {
 	position: fixed;
@@ -93,7 +97,6 @@ footer {
 }
 
 .newsletter_container {
-	height: 82px;
 	display: flex;
 	align-items: flex-start;
 	align-items: center;
@@ -102,11 +105,9 @@ footer {
 
 .newsletter_left {
 	width: 500px;
-	height: 51;
 }
 
 .newsletter_right {
-	height: 82px;
 	width: 400px;
 }
 
@@ -585,7 +586,6 @@ footer {
 
 /*начало services*/
 .services_1 {
-	height: 291px;
 	padding: 112px 64px 112px 64px;
 }
 
@@ -610,7 +610,6 @@ footer {
 }
 
 .services_2 {
-	height: 525px;
 	padding: 112px 64px 112px 64px;
 	text-align: center;
 }
@@ -675,7 +674,6 @@ footer {
 .list_page_1 {
 	padding: 112px 64px 112px 64px;
 	background-color: #FFFFFF;
-	/*height: 2325px;*/
 }
 
 .list_page_1_sectiontitle_head {
