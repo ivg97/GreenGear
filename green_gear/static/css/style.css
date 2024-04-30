@@ -1,3 +1,14 @@
+/*начало общих стилей*/
+
+.mrg_down_14px {
+	margin-bottom: 14px;
+}
+
+.mrg_down_24px {
+	margin-bottom: 24px;
+}
+/*конец общих стилей*/
+
 * {
 	margin: 0;
     padding: 0;
@@ -951,6 +962,95 @@ footer {
 }
 
 /*конец blog_post*/
+
+/*начало contact*/
+
+.contact {
+	width: 70%;
+	margin: auto;
+	padding: 112px 64px 112px 64px;
+}
+
+.contact_sectiontitle_head {
+	margin-bottom: 16px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	color: #012130;
+}
+
+.contact_sectiontitle {
+	margin-bottom: 48px;
+}
+
+.contact_sectiontitle_content_head {
+	margin-bottom: 16px;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 57.6px;
+	color: #012130;
+}
+
+.contact_sectiontitle_content_text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #012130;
+}
+
+.contact_form_tabl {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+}
+
+.contact_form label {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #012130;
+	margin-bottom: 8px;
+}
+
+.contact_form_tabl_left label, .contact_form_tabl_right label {
+	display: block;
+}
+
+.contact_form input[type="email"],
+.contact_form input[type="text"] {
+	border: 1px solid #13678B;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 12px;
+	border-radius: 35px;
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.contact_form button {
+	border: 1px solid #13678B;
+	padding: 12px 24px 12px 24px;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	background-color: #13678B;
+	border-radius: 35px;
+}
+
+.contact_form textarea {
+	padding: 12px;
+	border-radius: 20px;
+	border: solid 1px #13678B;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 180px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+/*конец contact*/
 
 /*начало хома*/
 .home_1_front {

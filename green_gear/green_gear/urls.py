@@ -21,6 +21,7 @@ from about_us.views import about_us
 from service.views import service
 from blog.views import list_page
 from blog.views import detail_page
+from contact.views import contact
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +30,6 @@ urlpatterns = [
     path('service/', service, name='service'),
     path('blog/', list_page, name='list_page'),
     path('blog_post/', detail_page, name='detail_page'),
+    path('contact/', contact, name='contact'),
     path('', home, name='home'),
 ]
