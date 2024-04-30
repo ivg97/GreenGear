@@ -1,10 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}
+Service
+{% endblock %}
+{% block content %}
+<div class="services_1">
+	<div class="services_1_content">
+		<div class="services_1_content_left">
+			<div class="services_1_content_left_text">AI Solutions</div>
+		</div>
+		<div class="services_1_content_right">
+			<div class="services_1_content_right_text">Discover how our AI automation and custom application development services can transform your business and drive growth.</div>
+		</div>
+	</div>
+</div>
+<div class="services_2">
+	<div class="services_2_content">
+		<div class="services_2_content_column">
+			<img src="/static/img/Vector2.svg">
+			<div class="services_2_content_column_content">
+				<div class="services_2_content_column_content_head">Custom Application Development Services</div>
+				<div class="services_2_content_column_content_text">We offer custom application development solutions for various platforms, tailored to your specific needs.</div>
+			</div>
+			<div class="services_2_content_column_action">
+				<button style="margin-right: 24px;">Learn More</button>
+				<a href="#">Get Started<img src="/static/img/chevron-right.svg"></a>
+			</div>
+		</div>
+		<div class="services_2_content_column">
+			<img src="/static/img/Vector2.svg">
+			<div class="services_2_content_column_content">
+				<div class="services_2_content_column_content_head">Mobile Application Development</div>
+				<div class="services_2_content_column_content_text">We specialize in developing high-quality mobile applications for iOS and Android platforms.</div>
+			</div>
+			<div class="services_2_content_column_action">
+				<button style="margin-right: 24px;">Learn More</button>
+				<a href="#">Get Started<img src="/static/img/chevron-right.svg"></a>
+			</div>
+		</div>
+		<div class="services_2_content_column">
+			<img src="/static/img/Vector2.svg">
+			<div class="services_2_content_column_content">
+				<div class="services_2_content_column_content_head">Web Application Development</div>
+				<div class="services_2_content_column_content_text">Our expert team creates robust and scalable web applications to meet your business requirements.</div>
+			</div>
+			<div class="services_2_content_column_action">
+				<button style="margin-right: 24px;">Learn More</button>
+				<a href="#">Get Started<img src="/static/img/chevron-right.svg"></a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

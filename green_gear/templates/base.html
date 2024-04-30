@@ -2,27 +2,70 @@
 
 {% load static %}
 
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>{{ title|title }}</title>
 
     {% block css %}
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
     {% endblock %}
 </head>
 <body>
 
 {% block navbar %}
+<nav>
+    <div class="navbar_container">
+        <img class="navbar_left" src="/static/img/content.png" style="width: 247px; height: 53.56px;">
+        <div class="navbar_right">
+            <ul class="navbar">
+                <li><a href="/about_us">About Us</a></li>
+                <li><a href="/service">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Solutions</a></li>
+            </ul>
+            <!-- <button class="learn">Learn</button>
+            <button class="sign_up">Sing Up</button> -->
+        </div>
+    </div>
+</nav>
 {% endblock %}
 
 {% block content %}
 {% endblock %}
 
 {% block js %}
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
 
 {% block footer %}
+<footer>
+    <div class="newsletter_container">
+        <div class="newsletter_left">
+            <div class="join_our_newsletter">Subscribe to Newsletter</div>
+            <div class="join_our_newsletter_2">Stay up to date with our latest news and updates.</div>
+        </div>
+        <div class="newsletter_right">
+            <input type="email" name="email" placeholder="Enter your email"><!-- а кнопка sign up нужна???? -->
+            <button>Sign Up</button><br>
+            <div class="form_email_under">By subscribing, you agree to our Privacy Policy. <a href="#">Privacy Policy</a></div>
+        </div>
+    </div>
+    <div class="links">
+        <div class="column_one">Column One</div>
+        <a href="/about_us">About us</a>
+        <a href="#">Contact us</a>
+        <a href="#">FAQs</a>
+        <a href="#">Support</a>
+        <a href="/blog">Blog</a>
+    </div>
+    <div class="credits">
+        <div class="copyright">&copy; 2024 Green Gear Inc. All rights reserved.</div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Cookie Policy</a>
+    </div>
+</footer>
 {% endblock %}
-
 </body>
 </html>
