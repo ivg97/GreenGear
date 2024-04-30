@@ -837,6 +837,121 @@ footer {
 
 /*конец list_page*/
 
+/*начало blog_post*/
+.blog_post1 {
+	padding: 112px 64px 112px 64px;
+} 
+
+.blog_post1_content {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 80px;
+}
+
+.blog_post1_content_right {
+	background-image: url("/static/img/flat_pattern_bg.png");
+	width: 100%;
+	height: 100%;
+}
+
+.blog_post1_content_left_sectiontitle_social_head {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 27px;
+	margin-bottom: 16px;
+}
+
+.blog_post1_content_left_sectiontitle_social_icons_1,
+.blog_post1_content_left_sectiontitle_social_icons_2,
+.blog_post1_content_left_sectiontitle_social_icons_3,
+.blog_post1_content_left_sectiontitle_social_icons_4 {
+	margin-right: 8px;
+	border-radius: 64px;
+	padding: 4px;
+	background: var(--Color-Neutral-neutral-lightest, #EEEEEE);
+}
+
+.blog_post1_content_left_sectiontitle_title_content1 {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.blog_post1_content_left_sectiontitle_title_content1_blog,
+.blog_post1_content_left_sectiontitle_title_content1_category {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-right: 8px;
+}
+
+.blog_post1_content_left_sectiontitle_title_content1_icon {
+	background-image: url("/static/img/arrow.svg");
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+
+.blog_post1_content_left_sectiontitle_title_content2_blog {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 57.6px;
+	margin-bottom: 48px;
+}
+
+.blog_post1_content_left_sectiontitle_title_content2_content_container {
+	display: flex;
+	margin-bottom: 8px;
+}
+
+.blog_post1_content_left_sectiontitle_title_content2_content_container_by {
+	margin-right: 4px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.blog_post1_content_left_sectiontitle_title_content2_content_container_name {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 21px;
+}
+
+.blog_post1_content_left_sectiontitle_title_content2_content_time {
+	display: flex;
+}
+
+.blog_post1_content_left_sectiontitle_title_content2_content_time_1,
+.blog_post1_content_left_sectiontitle_title_content2_content_time_3 {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	margin-right: 8px;
+}
+
+.blog_post1_content_left_sectiontitle_title_content2_content_time_2 {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	margin-right: 8px;
+}
+
+.blog_post2 {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	padding: 112px 64px 112px 64px;
+	gap: 80px;
+}
+
+.blog_post2_richtext {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #000000;
+}
+
+/*конец blog_post*/
+
 /*начало хома*/
 .home_1_front {
 	background-color: #012130;
