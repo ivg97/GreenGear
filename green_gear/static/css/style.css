@@ -2,6 +2,7 @@
 	margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*начало навбара*/
@@ -9,6 +10,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 1000;
 	border-bottom: 1px solid white;
 	padding: 0px 64px 0px 64px;
 	width: 100%;
@@ -47,7 +49,6 @@ nav {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .learn, .sign_up {
@@ -75,7 +76,6 @@ nav {
 /*начало футера*/
 
 footer {
-	height: 380px;
 	padding: 80px 64px 80px 64px;
 	background-color: #012130;
 	color: white;
@@ -103,21 +103,18 @@ footer {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 27px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .join_our_newsletter_2 {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .newsletter_right input {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: black;
 	background-color: D9D9D9;
 	width: 265px;
@@ -133,7 +130,6 @@ footer {
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 18px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .form_email_under a {
@@ -147,7 +143,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	width: 119px;
 	height: 48px;
 	border-radius: 35px;
@@ -167,14 +162,12 @@ footer {
 	text-decoration: none;
 	color: white;
 	font-weight: 400;
-	font-family: 'Roboto', sans-serif;
 }
 
 .column_one {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .credits {
@@ -189,7 +182,6 @@ footer {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 }
 
@@ -198,7 +190,6 @@ footer {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	font-family: 'Roboto', sans-serif;
 	text-decoration: underline;
 	color: #F3F3F3;
 }
@@ -207,13 +198,11 @@ footer {
 /*начало about us*/
 .about_us_1 {
 	width: 100%;
-	height: 864px;
 	padding: 112px 64px 112px 64px;
 }
 
 .about_us_1_container {
 	width: 100%;
-	height: 640px;
 }
 
 .about_us_1_container_content {
@@ -233,14 +222,12 @@ footer {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 48px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .about_us_1_container_content_text {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .about_us_1_container_content_right {
@@ -256,7 +243,6 @@ footer {
 }
 
 .about_us_2_content {
-	height: 210px;
 	display: flex;
 	gap: 80px;
 }
@@ -265,7 +251,6 @@ footer {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 48px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 }
 
@@ -273,9 +258,7 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
-	height: 48px;
 	margin-bottom: 32px;
 }
 
@@ -290,7 +273,6 @@ footer {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 57.6px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 }
 
@@ -299,7 +281,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 }
 
@@ -313,13 +294,10 @@ footer {
 
 .about_us_3 {
 	padding: 112px 64px 112px 64px;
-	height: 1485px;
 	background-color: #FFFFFF;
 }
 
 .about_us_3_sectiontitle {
-	width: 768px;
-	height: 149px;
 	margin: 0 auto;
 	margin-bottom: 80px;
 }
@@ -328,7 +306,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 16px;
 	text-align: center;
@@ -339,7 +316,6 @@ footer {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 57.6px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	text-align: center;
 }
@@ -348,20 +324,14 @@ footer {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 27px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	text-align: center;
-}
-
-.about_us_3_content {
-	height: 1066px;
 }
 
 .about_us_3_content_row {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 32px;
-	height: 489px;
 	margin-bottom: 64px;
 }
 
@@ -369,7 +339,6 @@ footer {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 30px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	text-align: center;
 }
@@ -378,7 +347,6 @@ footer {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 27px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	text-align: center;
 	margin-bottom: 16px;
@@ -388,7 +356,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	text-align: center;
 	margin-bottom: 16px;
@@ -403,7 +370,6 @@ footer {
 }
 
 .about_us_4 {
-	height: 864px;
 	padding: 112px 64px 112px 64px;
 	background-color: #012130;
 }
@@ -422,7 +388,6 @@ footer {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 48px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 	margin-bottom: 24px;
 }
@@ -431,7 +396,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 	margin-bottom: 32px;
 }
@@ -461,7 +425,6 @@ footer {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 28px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 	margin-bottom: 16px;
 }
@@ -470,12 +433,10 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 }
 
 .about_us_5 {
-	height: 214px;
 	padding: 80px 64px 80px 64px;
 	background-color: #012130;
 }
@@ -488,7 +449,6 @@ footer {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 27px;
-	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
 	margin-right: 64px;
 	width: 320px;
@@ -507,7 +467,6 @@ footer {
 }
 
 .about_us_6 {
-	height: 826px;
 	padding: 112px 64px 112px 64px;
 }
 
@@ -515,7 +474,6 @@ footer {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 57.6px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	text-align: center;
 	margin-bottom: 24px;
@@ -525,7 +483,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	text-align: center;
 	margin-bottom: 80px;
@@ -561,7 +518,6 @@ footer {
 
 .about_us_7 {
 	position: relative;
-	height: 418px;
 	padding: 112px 64px 112px 64px;
 	background: #01213080;
 }
@@ -575,15 +531,10 @@ footer {
 	z-index: -1;
 }
 
-.about_us_7_column {
-	width: 768px;
-}
-
 .about_us_7_column_content_head {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 57.6px;
-	font-family: 'Roboto', sans-serif;
 	color: white;
 	margin-bottom: 24px;
 }
@@ -592,7 +543,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: white;
 	margin-bottom: 24px;
 }
@@ -609,7 +559,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .about_us_7_column_actions_feedback {
@@ -639,7 +588,6 @@ footer {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 67.2px;
-	font-family: 'Roboto', sans-serif;
 	color: #012130;
 }
 
@@ -647,7 +595,6 @@ footer {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 27px;
-	font-family: 'Roboto', sans-serif;
 	color: #012130;
 }
 
@@ -677,7 +624,6 @@ footer {
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 41.6px;
-	font-family: 'Roboto', sans-serif;
 	color: #012130;
 	margin-bottom: 24px;
 }
@@ -686,7 +632,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #012130;
 	margin-bottom: 24px;
 }
@@ -697,14 +642,12 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 }
 
 .services_2_content_column_action button {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	border-radius: 35px;
 	padding: 12px 24px 12px 24px;
 	border: solid 1px #13678B;
@@ -728,7 +671,6 @@ footer {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 16px;
 }
@@ -737,7 +679,6 @@ footer {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 67.2px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 24px;
 }
@@ -746,7 +687,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 80px;
 }
@@ -772,7 +712,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 8px;
 }
@@ -781,7 +720,6 @@ footer {
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 41.6px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 8px;
 }
@@ -790,7 +728,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 24px;
 }
@@ -811,7 +748,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 }
 
@@ -823,7 +759,6 @@ footer {
 	ont-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-right: 8px;
 }
@@ -832,7 +767,6 @@ footer {
 	ont-weight: 400;
 	font-size: 18px;
 	line-height: 27px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-right: 8px;
 }
@@ -841,7 +775,6 @@ footer {
 	ont-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 }
 
@@ -855,7 +788,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	background-color: white;
 	border: none;
@@ -884,7 +816,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 8px;
 }
@@ -893,7 +824,6 @@ footer {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 33.6px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 	margin-bottom: 8px;
 }
@@ -902,7 +832,6 @@ footer {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Roboto', sans-serif;
 	color: #000000;
 }
 
