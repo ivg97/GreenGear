@@ -349,20 +349,11 @@ footer {
 	padding: 112px 64px 112px 64px;
 }
 
-.about_us_1_container {
-	width: 100%;
-}
-
 .about_us_1_container_content {
 	align-items: center;
-	height: 100%;
 	display: grid;
 	gap: 80px;
 	grid-template-columns: 1fr 2fr;
-}
-
-.about_us_1_container_content_left {
-	
 }
 
 .about_us_1_container_content_head {
@@ -730,6 +721,14 @@ footer {
 .about_us_7_column_actions_service {
 	background-color: #01213080;
 	color: white;
+}
+
+@media screen and (max-width: 950px) {
+	.about_us_1_container_content {
+		gap: 48px;
+		grid-template-rows: auto auto;
+		grid-template-columns: 1fr;
+	}
 }
 /*конец about us*/
 
