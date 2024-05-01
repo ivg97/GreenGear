@@ -3,10 +3,9 @@
 {% endblock %}
 {% block content %}
 
-
 <div class="contact">
     <div class="contact_sectiontitle">
-        <div class="contact_sectiontitle_head">Solutions</div>
+        <div class="contact_sectiontitle_head">Feedback Form</div>
         <div class="contact_sectiontitle_content">
             <div class="contact_sectiontitle_content_head">Get in Touch</div>
             <div class="contact_sectiontitle_content_text">Fill out the form below to request a quote or consultation.</div>
@@ -15,20 +14,18 @@
     <form method="post" class="contact_form">
         <div class="contact_form_tabl">
             <div class="contact_form_tabl_left">
-                <label for="first_name">First Name</label>
-                <input type="text" name="first_name">
-                <label for="email">Email</label>
-                <input type="email" name="email">
+                <label for="full_name">Full Name</label>
+                <input type="text" name="full_name" required>
             </div>
             <div class="contact_form_tabl_right">
-                <label for="last_name">Last Name</label>
-                <input type="text" name="last_name">
-                <label for="phone">Phone Number</label>
-                <input type="text" name="phone">
+                <label for="email">Email</label>
+                <input type="email" name="email" required>
             </div>
         </div>
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" required>
         <label for="message">Message</label>
-        <textarea class="mrg_down_24px" placeholder="Type your message here..."></textarea>
+        <textarea class="mrg_down_24px" placeholder="Type your message here..." required></textarea>
         <button>Submit</button>
     </form>
 </div>
