@@ -1,8 +1,10 @@
 from django.shortcuts import render
 
-# Create your views here.
+
 def home(request):
-    title = {
-        'title': 'Green gear'
+    """Main page"""
+    context = {
+        'title': 'Green gear',
     }
-    return render(request, 'home/home.html', title)
+    template_name = 'home/home.html'
+    return render(request, template_name, context)
