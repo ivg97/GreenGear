@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def service(request):
+    context = {
+        'title': 'Services'
+    }
+    template_name = 'service/service.html'
+    return render(request, template_name, context)
