@@ -1,4 +1,4 @@
-/*начало общих стилей*/
+/*начало объединяющих стилей*/
 
 .mrg_down_14px {
 	margin-bottom: 14px;
@@ -15,9 +15,9 @@
 .color_white {
 	color: #ffffff;
 }
+/*начало объединяющих стилей*/
 
-/*конец общих стилей*/
-
+/*начало общих стилей*/
 @font-face {
 	font-family: 'for_logo';
 	src: url('/static/fonts/MuseoModerno-VariableFont_wght.ttf') format('truetype');
@@ -34,11 +34,26 @@ body {
 	padding-top: 72px;
 }
 
+button, a {
+	user-select: none;
+}
+
+input, textarea {
+	outline: none;
+}
+
+
+button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
 @media screen and (max-width:680px) {
 	html {
 		width: 680px;
 	}
 }
+/*конец общих стилей*/
 
 /*начало навбара*/
 nav {
