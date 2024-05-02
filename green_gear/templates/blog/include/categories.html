@@ -1,0 +1,9 @@
+<div class="list_page_1_content_content_categories">
+                <button>View All</button>
+                {% if categories %}
+    
+                    {% for category in categories %}
+                        <button>{{ category }}</button>
+                    {% endfor %}
+                {% endif %}
+</div>

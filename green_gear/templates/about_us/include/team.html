@@ -1,0 +1,48 @@
+{#  TEAM  #}
+<div class="about_us_3">
+    <div class="about_us_3_sectiontitle">
+        <div class="about_us_3_sectiontitle_head">Innovate</div>
+        <div class="about_us_3_sectiontitle_content">
+            <div class="about_us_3_sectiontitle_content_head">Meet Our Team
+            </div>
+            <div class="about_us_3_sectiontitle_content_text">Get to know the
+                leaders behind Green Gear Inc.
+            </div>
+        </div>
+    </div>
+    <div class="about_us_3_content">
+        <div class="about_us_3_content_row">
+
+            {% for member in members %}
+                <div class="about_us_3_content_row_card">
+                    {% if member.photo %}
+                        <img src="/static/img/flat_pattern_bg.png"
+                             style="width: 304px; height: 296px; border-radius: 20px; margin-bottom: 24px;">
+                    {% else %}
+                        <img src="/static/img/flat_pattern_bg.png"
+                             style="width: 304px; height: 296px; border-radius: 20px; margin-bottom: 24px;">
+                    {% endif %}
+                    <div class="about_us_3_content_row_card_content">
+                        <div class="about_us_3_content_row_card_content_title">
+                            <div class="about_us_3_content_row_card_content_title_up">
+                                {{ member.full_name }}
+                            </div>
+                            <div class="about_us_3_content_row_card_content_title_down">
+                                {{ member.place }}
+                            </div>
+                        </div>
+                        <div class="about_us_3_content_row_card_content_text">
+                            {{ member.comment }}
+                        </div>
+                    </div>
+                    <div class="about_us_3_content_row_card_socialicons">
+                        <a href="#"><img src="/static/img/linkedIn.svg"></a>
+                        <a href="#"><img src="/static/img/X.svg"></a>
+                        <a href="#"><img src="/static/img/Dribble.svg"></a>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
