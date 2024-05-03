@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from blog.models import Post, Category
+from blog.models import Post, Category, NewPostEmail
 
 
 @admin.register(Category)
@@ -13,3 +13,9 @@ class CategoryAdmin(admin.ModelAdmin):
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'category', 'is_active')
     list_display_links = ('title',)
+
+
+@admin.register(NewPostEmail)
+class NewPostEmailAdmin(admin.ModelAdmin):
+    list_display = ('email', 'is_active')
+    list_display_links = ('email',)

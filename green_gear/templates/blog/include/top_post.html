@@ -1,0 +1,30 @@
+<div class="list_page_1_content_card">
+    <div class="list_page_1_content_card_left"></div>
+    <div class="list_page_1_content_card_right">
+        <div class="list_page_1_content_card_right_content">
+            <div class="list_page_1_content_card_right_content_head">{{ top_post.category }}</div>
+            <div class="list_page_1_content_card_right_content_blog">
+
+                <a href="{% url 'blog:post' slug=top_post.slug pk=top_post.pk %}">{{ top_post.title }}</a>
+            </div>
+
+            <div class="list_page_1_content_card_right_content_text">
+                {{ top_post.text }}</div>
+        </div>
+        <div class="list_page_1_content_card_right_avatar">
+            <div class="list_page_1_content_card_right_avatar_img"></div>
+            <div class="list_page_1_content_card_right_avatar_content">
+                <div class="list_page_1_content_card_right_avatar_content_text">{{ top_post.author }}</div>
+                <div class="list_page_1_content_card_right_avatar_content_time">
+                    <div class="list_page_1_content_card_right_avatar_content_time_1">{{ top_post.created_at|date:"d M Y" }}</div>
+                    <div class="list_page_1_content_card_right_avatar_content_time_2">
+                        •
+                    </div>
+                    <div class="list_page_1_content_card_right_avatar_content_time_3">
+                        5 min read
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

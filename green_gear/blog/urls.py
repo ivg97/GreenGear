@@ -1,9 +1,10 @@
-from django.contrib import admin
 from django.urls import path
 
-from blog.views import list_page, detail_page
+from blog import views
+
+app_name = 'blog'
 
 urlpatterns = [
-    path('', list_page, name='list_page'),
-    path('blog_post/', detail_page, name='detail_page'),
+    path('', views.BlogView.as_view(), name='list_page'),
+    path('post/<slug:slug>/<int:pk>/', views.DetailPostView.as_view(), name='post'),
 ]

@@ -70,9 +70,14 @@
             <div class="join_our_newsletter">Subscribe to Newsletter</div>
             <div class="join_our_newsletter_2">Stay up to date with our latest news and updates.</div>
         </div>
+        
+{#        NEW SLETTER #}
+{#        {% include 'include/new_sletter.html' %}#}
+        
         <div class="newsletter_right">
             <input type="email" name="email" placeholder="Enter your email"><button>Sign Up</button>
         </div>
+        
     </div>
     <div class="links">
         <div class="column_one">Column One</div>
@@ -83,7 +88,7 @@
         <a href="/contact">Contact</a>
     </div>
     <div class="credits">
-        <div class="copyright">&copy; 2024 Green Gear Inc. All rights reserved.</div>
+        <div class="copyright">&copy; {% now "Y" %} Green Gear Inc. All rights reserved.</div>
     </div>
 </footer>
 {% endblock %}
