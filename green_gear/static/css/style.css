@@ -1,4 +1,4 @@
-/*начало общих стилей*/
+/*начало объединяющих стилей*/
 
 .mrg_down_14px {
 	margin-bottom: 14px;
@@ -15,9 +15,9 @@
 .color_white {
 	color: #ffffff;
 }
+/*начало объединяющих стилей*/
 
-/*конец общих стилей*/
-
+/*начало общих стилей*/
 @font-face {
 	font-family: 'for_logo';
 	src: url('/static/fonts/MuseoModerno-VariableFont_wght.ttf') format('truetype');
@@ -34,6 +34,27 @@ body {
 	padding-top: 72px;
 }
 
+button, a {
+	user-select: none;
+}
+
+input, textarea {
+	outline: none;
+}
+
+
+button:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+@media screen and (max-width:680px) {
+	html {
+		width: 680px;
+	}
+}
+/*конец общих стилей*/
+
 /*начало навбара*/
 nav {
 	position: fixed;
@@ -49,11 +70,18 @@ nav {
 	transition: height 0.5s ease-in-out;
 }
 
-.show_close_menu {
+.show_menu {
 	position: absolute;
 	display: none;
 	right: 30px;
     top: 30px;
+}	
+
+.close_menu {
+	position: absolute;
+	display: none;
+	right: 11px;
+    top: 11px;
 }	
 
 .navbar_left {
@@ -196,7 +224,7 @@ nav {
 		line-height: 27px;
 	}
 
-	.show_close_menu {
+	.show_menu {
 		display: block;
 	}
 
@@ -527,11 +555,6 @@ footer {
 	gap: 80px;
 }
 
-.about_us_4_container_content {
-	width: 616px;
-}
-
-
 .about_us_4_container_content_sectiontitle_head {
 	font-weight: 700;
 	font-size: 40px;
@@ -606,7 +629,6 @@ footer {
 
 .about_us_5_logo {
 	width: 169px;
-	height: 36.65px;
 	margin-right: 32px;
 }
 
@@ -641,7 +663,7 @@ footer {
 .about_us_6_content {
 	display: grid;
 	gap: 32px;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .about_us_6_content_img1 {
@@ -723,6 +745,32 @@ footer {
 	color: white;
 }
 
+@media screen and (max-width: 1460px) {
+	.about_us_3_content_row {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.about_us_4_container {
+		grid-template-columns: 1fr;
+		gap: 48px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.about_us_6_content {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 1125px) {
+	.about_us_3_content_row {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
 @media screen and (max-width: 950px) {
 	.about_us_1_container_content {
 		gap: 48px;
@@ -730,6 +778,44 @@ footer {
 		grid-template-columns: 1fr;
 	}
 }
+
+@media screen and (max-width: 790px) {
+	.about_us_3_content_row {
+		grid-template-columns: 1fr;
+	}
+
+	.about_us_5_continer {
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.about_us_5_continer_content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.about_us_2_content {
+		flex-wrap: wrap;
+		gap: 20px;
+		margin-bottom: 48px;
+	}
+
+	.about_us_4_container_content_list {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.about_us_2_content_column2_text_down {
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
+
+
 /*конец about us*/
 
 /*начало services*/
@@ -769,9 +855,9 @@ footer {
 .services_2_content_column {
 	margin-right: 48px;
 	margin-bottom: 48px;
-	text-align: center;
 	display: inline-block;
 	width: 405.33px;
+	margin: auto;
 }
 
 .services_2_content_column:last-child {
@@ -815,6 +901,49 @@ footer {
 .services_2_content_column_action img {
 	vertical-align: middle;
 	margin-left: 8px;
+}
+
+@media screen and (max-width: 1360px) {
+	.services_2_content_column_action {
+		padding-top: 16px;
+	}
+
+	.services_2_content_column {
+		margin-bottom: 48px;
+	}
+
+	.services_2_content_column:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 945px) {
+	.services_2_content_column img {
+		margin-bottom: 20px;
+	}
+
+	.services_2 {
+		padding: 64px 20px 64px 20px;
+	}
+
+	.services_2_content_column_content_head {
+		margin-bottom: 20px;
+	} 
+
+	.services_2_content_column_content_text {
+		margin-bottom: 8px;
+	}	
+}
+
+@media screen and (max-width: 830px) {
+	.services_1 {
+		padding: 64px 20px 64px 20px;
+	}
+
+	.services_1_content {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
 }
 /*конец services*/
 
@@ -964,7 +1093,7 @@ footer {
 	background-image: url("/static/img/flat_pattern_bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 416px;
+	width: 100%;
 	height: 300px;
 	border-radius: 20px;
 	margin-bottom: 24px;
@@ -997,6 +1126,46 @@ footer {
 	color: #000000;
 }
 
+@media screen and (max-width: 1450px) {
+	.list_page_1_content_content_content_row {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.list_page_1_content_content_content_row {
+		gap: 24px;
+	}
+
+	.list_page_1_content_card {
+		margin-bottom: 56px;
+	}
+
+	.list_page_1 {
+		padding: 64px 20px 64px 20px;
+	}
+
+	.list_page_1_content_card_right {
+		padding-left: 20px;
+	}
+
+	.list_page_1_sectiontitle_content_text {
+		margin-bottom: 48px;
+	}
+
+	.list_page_1_content_content_categories {
+		margin-bottom: 48px;
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.list_page_1_content_card {
+		grid-template-columns: 1fr;
+		gap: 24px;
+	}
+
+	.list_page_1_content_content_content_row {
+		grid-template-columns: 1fr;
+	}
+}
 /*конец list_page*/
 
 /*начало blog_post*/
@@ -1201,6 +1370,20 @@ footer {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
+}
+
+@media screen and (max-width: 720px) {
+	.contact {
+		padding: 64px 20px 64px 20px;
+	}
+
+	.contact_sectiontitle_head {
+		margin-bottom: 12px;
+	}
+
+	.contact_sectiontitle {
+		margin-bottom: 32px;
+	}
 }
 /*конец contact*/
 

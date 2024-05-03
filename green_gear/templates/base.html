@@ -35,7 +35,8 @@
 
 {% block navbar %}
 <nav id="nav">
-    <img class="show_close_menu" id="show_close_menu" src="/static/img/chevron_down_menu.svg">
+    <img class="show_menu" id="show_menu" src="/static/img/chevron_down_menu.svg">
+    <img class="close_menu" id="close_menu" src="/static/img/close_menu.svg">
     <div class="navbar_container">
         <a href="/">
             <div class="navbar_left">
@@ -74,8 +75,7 @@
 {#        {% include 'include/new_sletter.html' %}#}
         
         <div class="newsletter_right">
-            <input type="email" name="email" placeholder="Enter your email"><!-- а кнопка sign up нужна???? -->
-            <button>Sign Up</button><br>
+            <input type="email" name="email" placeholder="Enter your email"><button>Sign Up</button>
         </div>
         
     </div>
