@@ -3,6 +3,10 @@ from contact.models import CommunicationService
 
 
 class CommunicationServiceForm(forms.ModelForm):
+    full_name = forms.CharField(
+        label='Full Name',
+        widget=forms.TextInput()
+    )
     subject = forms.CharField(
         label='Subject',
         widget=forms.TextInput()
@@ -18,5 +22,5 @@ class CommunicationServiceForm(forms.ModelForm):
 
     class Meta:
         model = CommunicationService
-        fields = ('subject', 'email', 'message')
+        fields = ('full_name', 'subject', 'email', 'message')
 

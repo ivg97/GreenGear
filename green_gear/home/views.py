@@ -41,3 +41,7 @@ class HomeView(FormView):
 
     def get_success_url(self):
         return reverse('home:home')
+
+
+def subscribe(request, email):
+    return reverse('home:home')

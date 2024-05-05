@@ -1,5 +1,9 @@
 <div class="list_page_1_content_card">
+    {% if top_post.image %}
+    <div class="list_page_1_content_card_left" style="background-image: url({{ top_post.image.url }});"></div>
+    {% else %}
     <div class="list_page_1_content_card_left"></div>
+    {% endif %}
     <div class="list_page_1_content_card_right">
         <div class="list_page_1_content_card_right_content">
             <div class="list_page_1_content_card_right_content_head">{{ top_post.category }}</div>

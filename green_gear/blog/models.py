@@ -26,7 +26,7 @@ class Post(models.Model):
         verbose_name='Created at',
     )
     image = models.ImageField(
-        upload_to='images/posts/%Y/',
+        upload_to='posts/%Y/',
         blank=True,
         null=True,
         verbose_name='Image',

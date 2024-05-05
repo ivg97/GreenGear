@@ -8,7 +8,7 @@ def about_us(request):
     # members = [i for i in range(17)]
 
     context = {
-        'title': 'About us',
+        'title': 'Green gear - About us',
         'members': members,
     }
     template_name = 'about_us/about_us.html'

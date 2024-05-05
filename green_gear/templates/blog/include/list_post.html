@@ -1,34 +1,43 @@
 {% for post in posts %}
 
-    
-    <div class="list_page_1_content_content_content_row">
-    
-
-<div class="list_page_1_content_content_content_row">
-                    
-                    <div class="list_page_1_content_content_content_row_card">
-                        <div class="list_page_1_content_content_content_row_card_img"></div>
-                        <div class="list_page_1_content_content_content_row_card_content">
-                            <div class="list_page_1_content_content_content_row_card_content_1">{{ post.category }}</div>
-                            <div class="list_page_1_content_content_content_row_card_content_2">
-                                <a href="{% url 'blog:post' slug=top_post.slug pk=top_post.pk %}">{{ post.title }}</a></div>
-                            <div class="list_page_1_content_content_content_row_card_content_3">
-                                {{ post.text }}</div>
-                        </div>
-                        <div class="list_page_1_content_card_right_avatar">
-                            <div class="list_page_1_content_card_right_avatar_img"></div>
-                            <div class="list_page_1_content_card_right_avatar_content">
-                                <div class="list_page_1_content_card_right_avatar_content_text">
-                                    {{ post.author}}</div>
-                                <div class="list_page_1_content_card_right_avatar_content_time">
-                                    <div class="list_page_1_content_card_right_avatar_content_time_1">{{ top_post.created_at|date:"d M Y" }}</div>
-                                    <div class="list_page_1_content_card_right_avatar_content_time_2">•</div>
-                                    <div class="list_page_1_content_card_right_avatar_content_time_3">5 min read</div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="list_page_1_content_content_content_row_card">
+    {% if post.image %}
+        <div class="list_page_1_content_content_content_row_card_img" style="background-image: url({{ post.image.url }});"></div>
+        {% else %}
+        <div class="list_page_1_content_content_content_row_card_img"></div>
+        {% endif %}
+        <div class="list_page_1_content_content_content_row_card_content">
+            <div class="list_page_1_content_content_content_row_card_content_1">
+                {{ post.category }}
+            </div>
+            <div class="list_page_1_content_content_content_row_card_content_2">
+                <a href="{% url 'blog:post' slug=top_post.slug pk=top_post.pk %}">{{ post.title }}</a>
+            </div>
+            <div class="list_page_1_content_content_content_row_card_content_3">
+                {{ post.text }}
+            </div>
+        </div>
+        <div class="list_page_1_content_card_right_avatar">
+            <div class="list_page_1_content_card_right_avatar_img"></div>
+            <div class="list_page_1_content_card_right_avatar_content">
+                <div class="list_page_1_content_card_right_avatar_content_text">
+                    {{ post.author }}
+                </div>
+                <div class="list_page_1_content_card_right_avatar_content_time">
+                    <div class="list_page_1_content_card_right_avatar_content_time_1">
+                        {{ top_post.created_at|date:"d M Y" }}
+                    </div>
+                    <div class="list_page_1_content_card_right_avatar_content_time_2">
+                        •
+                    </div>
+                    <div class="list_page_1_content_card_right_avatar_content_time_3">
+                        5 min read
                     </div>
                 </div>
+
+            </div>
+        </div>
     </div>
-    
+
+
 {% endfor %}

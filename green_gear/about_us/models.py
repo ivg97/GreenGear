@@ -22,7 +22,7 @@ class Team(models.Model):
         null=True
     )
     photo = models.ImageField(
-        upload_to='images/team_photos/',
+        upload_to='team_photos/',
         blank=True,
         null=True,
         verbose_name="Photo",
@@ -43,7 +43,18 @@ class Team(models.Model):
 
 class Feedback(models.Model):
     """Model for table feedback"""
-
+    full_name = models.CharField(
+        max_length=60,
+        verbose_name="Full Name"
+    )
+    place = models.CharField(
+        max_length=60,
+        verbose_name="Place"
+    )
+    corporation = models.CharField(
+        max_length=60,
+        verbose_name="Corporation"
+    )
     created_as = models.DateTimeField(
         auto_now_add=True,
         verbose_name="Created at"

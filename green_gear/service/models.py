@@ -26,7 +26,7 @@ class Service(models.Model):
         verbose_name="Image",
         blank=True,
         null=True,
-        upload_to='images/service/',
+        upload_to='service/',
     )
     is_active = models.BooleanField(
         default=True,
@@ -39,7 +39,7 @@ class Service(models.Model):
     class Meta:
         verbose_name = "Service"
         verbose_name_plural = "Services"
-        ordering = ['name']
+        ordering = ['-post']
         db_table = 'service'
 
 

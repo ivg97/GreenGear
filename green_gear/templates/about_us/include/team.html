@@ -1,4 +1,5 @@
 {#  TEAM  #}
+{% load static %}
 <div class="about_us_3">
     <div class="about_us_3_sectiontitle">
         <div class="about_us_3_sectiontitle_head">Innovate</div>
@@ -11,15 +12,15 @@
         </div>
     </div>
     <div class="about_us_3_content">
-        <div class="about_us_3_content_row">
+        <div class="about_us_3_content_row">{% for member in members %}
 
-            {% for member in members %}
                 <div class="about_us_3_content_row_card">
                     {% if member.photo %}
-                        <img src="/static/img/flat_pattern_bg.png"
+                        
+                        <img src="{{ member.photo.url }}"
                              style="width: 304px; height: 296px; border-radius: 20px; margin-bottom: 24px;">
                     {% else %}
-                        <img src="/static/img/flat_pattern_bg.png"
+                        <img src="{% static '/img/flat_pattern_bg.png' %}"
                              style="width: 304px; height: 296px; border-radius: 20px; margin-bottom: 24px;">
                     {% endif %}
                     <div class="about_us_3_content_row_card_content">
