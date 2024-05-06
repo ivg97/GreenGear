@@ -3,6 +3,10 @@ from django.db import models
 
 class CommunicationService(models.Model):
     """Model for table communication_services."""
+    full_name = models.CharField(
+        max_length=255,
+        verbose_name='Full Name'
+    )
     subject = models.CharField(
         max_length=255,
         verbose_name='Subject',

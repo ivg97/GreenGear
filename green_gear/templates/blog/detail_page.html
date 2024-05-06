@@ -40,7 +40,11 @@
                 </div>
             </div>
         </div>
+        {% if post.image %}
+        <div class="blog_post1_content_right" style="background-image: url({{ post.image.url }});"></div>
+        {% else %}
         <div class="blog_post1_content_right"></div>
+        {% endif %}
     </div>
 </div>
 <div class="blog_post2">

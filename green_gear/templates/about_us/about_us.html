@@ -212,7 +212,8 @@
 			<div class="about_us_7_column_content_text">If you have any partnership inquiries or press requests, please don't hesitate to reach out to us.</div>		
 		</div>
 		<div class="about_us_7_column_actions">
-			<button class="about_us_7_column_actions_feedback" style="margin-right: 16px;">Feedback</button><button class="about_us_7_column_actions_service">Service</button>
+            <a href="{% url "contact:contact" %}"><button class="about_us_7_column_actions_feedback" style="margin-right: 16px;">Get Started</button></a><a
+                href="{% url "service:service" %}"><button class="about_us_7_column_actions_service">Service</button></a>
 		</div>
 	</div>
 </div>

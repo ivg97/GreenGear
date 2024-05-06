@@ -25,6 +25,7 @@ class CommunicationServiceView(FormView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['contact_form'] = context['form']
+        context['title'] = 'Green gear - Contact'
         return context
 
     def form_valid(self, form):

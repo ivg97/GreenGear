@@ -23,6 +23,7 @@ class BlogView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['title'] = 'Green gear - Blog'
         context['categories'] = Category.objects.all()
         posts = Post.objects.filter(is_active=True)
         top = posts[0] if len(posts) > 0 else None
@@ -39,4 +40,5 @@ class DetailPostView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['title'] = f'Green gear - {self.object.title}'
         return context

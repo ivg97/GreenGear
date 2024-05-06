@@ -1,8 +1,13 @@
 <div class="newsletter_right">
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ email_form.email }}
-    <button>Subscribe</button><br>
-    </form>
+{#    <form action="" method="post">#}
+{#        {% csrf_token %}#}
+{#        {{ email_form.email }}#}
+{#        <a href="{% url 'home:subscribe' email_form.email %}"></a><button>Subscribe</button><br>#}
+{#    </form>#}
+    
+            <div class="newsletter_right">
+            <input type="email" name="email" placeholder="Enter your email"><a
+                    href="{% url 'home:subscribe' email='j' %}"><button>Subscribe</button></a>
+        </div>
 
 </div>

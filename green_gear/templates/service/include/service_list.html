@@ -1,0 +1,13 @@
+{% for service in services %}
+
+<div class="services_2_content_column">
+			<img src="/static/img/Vector2.svg">
+			<div class="services_2_content_column_content">
+				<div class="services_2_content_column_content_head">{{ service.name }}</div>
+				<div class="services_2_content_column_content_text">{{ service.description}}</div>
+			</div>
+			<div class="services_2_content_column_action">
+                <a href="{% url "blog:post" slug=service.post.slug pk=service.post.pk %}"><button style="margin-right: 24px;">Learn More</button></a><a href="{% url "contact:contact" %}">Get Started<img src="/static/img/chevron-right.svg"></a>
+			</div>
+		</div>
+{% endfor %}
