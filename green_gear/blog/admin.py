@@ -7,12 +7,14 @@ from blog.models import Post, Category, NewPostEmail
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug',)
     list_display_links = ('title',)
+    prepopulated_fields = {'slug': ('title',)}
 
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'category', 'is_active')
     list_display_links = ('title',)
+    prepopulated_fields = {'slug': ('title',)}
 
 
 @admin.register(NewPostEmail)

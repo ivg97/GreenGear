@@ -1,4 +1,7 @@
+{% load readtime_tags %}
+
 <div class="list_page_1_content_card">
+
     {% if top_post.image %}
     <div class="list_page_1_content_card_left" style="background-image: url({{ top_post.image.url }});"></div>
     {% else %}
@@ -13,7 +16,7 @@
             </div>
 
             <div class="list_page_1_content_card_right_content_text">
-                {{ top_post.text }}</div>
+                {{ top_post.text|slice:":700" }}...</div>
         </div>
         <div class="list_page_1_content_card_right_avatar">
             <div class="list_page_1_content_card_right_avatar_img"></div>
@@ -25,7 +28,7 @@
                         •
                     </div>
                     <div class="list_page_1_content_card_right_avatar_content_time_3">
-                        5 min read
+                        {{ top_post.text|reading_time }} min read
                     </div>
                 </div>
             </div>
